@@ -13,6 +13,12 @@
 		7CA3F5C82394A0BC00DE0D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3F5C62394A0BC00DE0D7E /* Main.storyboard */; };
 		7CA3F5CA2394A0BE00DE0D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3F5C92394A0BE00DE0D7E /* Assets.xcassets */; };
 		7CA3F5CD2394A0BE00DE0D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3F5CB2394A0BE00DE0D7E /* LaunchScreen.storyboard */; };
+		7CA3F5D52394A5F300DE0D7E /* BSAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3F5D42394A5F300DE0D7E /* BSAlertController.swift */; };
+		7CA3F5D72394AD4900DE0D7E /* BSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3F5D62394AD4900DE0D7E /* BSAlert.swift */; };
+		7CA3F5DB2394B4EE00DE0D7E /* ConfirmAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3F5DA2394B4EE00DE0D7E /* ConfirmAlertView.xib */; };
+		7CA3F5DD2394B53800DE0D7E /* ConfirmAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3F5DC2394B53800DE0D7E /* ConfirmAlertView.swift */; };
+		7CA3F5E02394F1E000DE0D7E /* OptionalAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3F5DF2394F1E000DE0D7E /* OptionalAlertView.swift */; };
+		7CA3F5E22394F1F100DE0D7E /* OptionalAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3F5E12394F1F100DE0D7E /* OptionalAlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		7CA3F5C92394A0BE00DE0D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA3F5CC2394A0BE00DE0D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA3F5CE2394A0BE00DE0D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA3F5D42394A5F300DE0D7E /* BSAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAlertController.swift; sourceTree = "<group>"; };
+		7CA3F5D62394AD4900DE0D7E /* BSAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAlert.swift; sourceTree = "<group>"; };
+		7CA3F5DA2394B4EE00DE0D7E /* ConfirmAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmAlertView.xib; sourceTree = "<group>"; };
+		7CA3F5DC2394B53800DE0D7E /* ConfirmAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAlertView.swift; sourceTree = "<group>"; };
+		7CA3F5DF2394F1E000DE0D7E /* OptionalAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalAlertView.swift; sourceTree = "<group>"; };
+		7CA3F5E12394F1F100DE0D7E /* OptionalAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionalAlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +75,22 @@
 				7CA3F5C92394A0BE00DE0D7E /* Assets.xcassets */,
 				7CA3F5CB2394A0BE00DE0D7E /* LaunchScreen.storyboard */,
 				7CA3F5CE2394A0BE00DE0D7E /* Info.plist */,
+				7CA3F5D42394A5F300DE0D7E /* BSAlertController.swift */,
+				7CA3F5D62394AD4900DE0D7E /* BSAlert.swift */,
+				7CA3F5DE2394F1B500DE0D7E /* View */,
 			);
 			path = BSAlertController;
+			sourceTree = "<group>";
+		};
+		7CA3F5DE2394F1B500DE0D7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CA3F5DA2394B4EE00DE0D7E /* ConfirmAlertView.xib */,
+				7CA3F5DC2394B53800DE0D7E /* ConfirmAlertView.swift */,
+				7CA3F5E12394F1F100DE0D7E /* OptionalAlertView.xib */,
+				7CA3F5DF2394F1E000DE0D7E /* OptionalAlertView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +153,8 @@
 			files = (
 				7CA3F5CD2394A0BE00DE0D7E /* LaunchScreen.storyboard in Resources */,
 				7CA3F5CA2394A0BE00DE0D7E /* Assets.xcassets in Resources */,
+				7CA3F5DB2394B4EE00DE0D7E /* ConfirmAlertView.xib in Resources */,
+				7CA3F5E22394F1F100DE0D7E /* OptionalAlertView.xib in Resources */,
 				7CA3F5C82394A0BC00DE0D7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA3F5D72394AD4900DE0D7E /* BSAlert.swift in Sources */,
 				7CA3F5C52394A0BC00DE0D7E /* ViewController.swift in Sources */,
+				7CA3F5DD2394B53800DE0D7E /* ConfirmAlertView.swift in Sources */,
 				7CA3F5C12394A0BC00DE0D7E /* AppDelegate.swift in Sources */,
+				7CA3F5E02394F1E000DE0D7E /* OptionalAlertView.swift in Sources */,
 				7CA3F5C32394A0BC00DE0D7E /* SceneDelegate.swift in Sources */,
+				7CA3F5D52394A5F300DE0D7E /* BSAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
