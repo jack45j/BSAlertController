@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 12,
+      "symbol": "BSAlert",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 14,
+      "symbol": "BSAlert.BSAlertType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 15,
+      "symbol": "BSAlert.BSAlertType.confirm",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 16,
+      "symbol": "BSAlert.BSAlertType.optional",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 21,
+      "symbol": "BSAlert.BSAlertTitleType.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 22,
+      "symbol": "BSAlert.BSAlertTitleType.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlert.swift",
+      "line": 23,
+      "symbol": "BSAlert.BSAlertTitleType.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlertController.swift",
+      "line": 11,
+      "symbol": "ConfirmAlertHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlertController.swift",
+      "line": 13,
+      "symbol": "BSAlertViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/benson/Documents/iOS Projects/BSAlertController/BSAlertController/BSAlertController.swift",
+      "line": 136,
+      "symbol": "BSAlertViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/benson/Documents/iOS Projects/BSAlertController"
+}
