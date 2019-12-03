@@ -51,15 +51,13 @@ public class BSAlertViewController: UIViewController {
     }
     
     /// Show alert view with one confirm button.
-	///
-    /// - Parameters:
-	///  	- alert : Current alert object
     private func showConfirmAlert() {
         guard
 			let confirmAlertView = Bundle.main.loadNibNamed("ConfirmAlertView", owner: nil, options: nil)?.first as? ConfirmAlertView,
-			let currentAlert = currentAlertView else { return }
+			let currentAlert = currentAlertView
+		else { return }
 		
-		confirmAlertView.confirmButton.setTitle("\(currentAlert.confirmButtonText ?? "")", for: .normal)
+		confirmAlertView.alertObject = currentAlert
         
         self.view.addSubview(setupBlurBackGroundView(with: confirmAlertView))
         
@@ -70,27 +68,20 @@ public class BSAlertViewController: UIViewController {
     
     
     ///  Show alert View with confirm and cancel buttons.
-	///
-    /// - Parameters:
-	/// 	- alert : Current alert object
     private func showOptionalAlert() {
         guard
 			let optionalAlertView = Bundle.main.loadNibNamed("OptionalAlertView", owner: nil, options: nil)?.first as? OptionalAlertView,
-			let currentAlert = currentAlertView else { return }
+			let currentAlert = currentAlertView
+		else { return }
 		
-        optionalAlertView.confirmButton.setTitle("\(currentAlert.confirmButtonText ?? "")", for: .normal)
-        optionalAlertView.cancelButton.setTitle("\(currentAlert.cancelButtonText ?? "")", for: .normal)
+		optionalAlertView.alertObject = currentAlert
         
         self.view.addSubview(setupBlurBackGroundView(with: optionalAlertView))
-        
+
         self.confirm = currentAlert.confirm
         self.cancel = currentAlert.cancel
 		isShowing = true
         UIApplication.topViewController()?.present(self, animated: currentAlert.shouldAnimateIn, completion: nil)
-    }
-    
-    private func centerAlertView(_ view: UIView) {
-        
     }
     
     /// Start to display next alert view.
@@ -162,7 +153,6 @@ public class BSAlertViewController: UIViewController {
 extension UIViewController {
     func show(alert: BSAlert) {
         BSAlertViewController.shared.displayQueue.insert(alert, at: 0)
-        print(BSAlertViewController.shared.displayQueue)
     }
 }
 

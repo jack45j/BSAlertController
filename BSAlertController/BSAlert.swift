@@ -28,10 +28,10 @@ public struct BSAlert {
     /// Default to warning alert type
     let alertType: BSAlertType?
     
-    let title: String?
+    let title: String
     
     /// Alert messages
-    let message: String?
+    let message: String
     
     let confirmButtonText: String?
     

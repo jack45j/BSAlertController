@@ -17,15 +17,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonDidTap(_ sender: Any) {
-		show(alert: BSAlert(type: .optional,
-							title: .error,
-							message: "GOGO",
-							confirmButtonText: "下次",
-							cancelButtonText: "不要",
-							shouldAnimateIn: true,
-							shouldAnimateOut: false,
-							confirm: { print("confirm pressed") },
-							cancel: { print("cancel") }))
+		for ind in 0...100 {
+			show(alert: BSAlert(type: .confirm,
+								title: .error,
+								message: "\(ind)",
+								confirmButtonText: "Confirm\(ind)",
+								cancelButtonText: "Cancel\(ind)",
+								shouldAnimateIn: ind % 2 == 0,
+								shouldAnimateOut: ind % 3 == 0,
+								confirm: { print("confirm pressed \(ind)") },
+								cancel: { print("Cancel pressed \(ind)") }))
+		}
     }
 }
 
