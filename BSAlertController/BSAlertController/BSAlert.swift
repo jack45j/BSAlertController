@@ -11,16 +11,17 @@ import Foundation
 /// Alert object for BSAlertController.
 public struct BSAlert {
     
-    /// Determine the style of alert.
-    ///
-    /// Default to confirm
+	/// Determine the style of alert.
+	/// Default to confirm
     public enum BSAlertType {
+		/// Alert view will contains only one confirm button.
         case confirm
+		
+		/// Alert view will contains confirm and cancel buttons.
         case optional
     }
     
     /// Determine the title of the alert view
-    ///
     /// Default to warning
     public enum BSAlertTitleType: String {
         case info = "資訊"
@@ -29,12 +30,10 @@ public struct BSAlert {
     }
     
     /// Alert Type of BSAlert.
-    ///
     /// Default to warning alert type
     let alertType: BSAlertType?
     
     /// Title of alert
-    ///
     /// Default to warning alert title type.
     let title: String
     

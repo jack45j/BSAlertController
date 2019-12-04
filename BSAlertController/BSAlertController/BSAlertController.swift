@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// The closure type of alert action handler.
 public typealias AlertActionHandler = (() -> Void)
 
 /// The BSAlertController class
@@ -112,7 +113,7 @@ public class BSAlertController: UIViewController {
         UIApplication.topViewController()?.present(self, animated: currentAlert.shouldAnimateIn, completion: nil)
     }
     
-    /// /// This method initial and return an UIVisualEffectView with blur effect.
+    /// This method initial and return an UIVisualEffectView with blur effect.
     ///
     /// - Parameters:
     ///     - subView : The view that will add to blur view's content view
@@ -160,26 +161,44 @@ public class BSAlertController: UIViewController {
 // MARK: - public API Interface
 //
 public extension BSAlertController {
-    
+	
+	/// Display an alert with full custom BSAlert.
+	///
+	/// - Parameter alert: An BSAlert alert object.
     func show(_ alert: BSAlert) {
         BSAlertController.shared.addNewAlert(alert)
     }
     
+	/// Display an CONFIRM type alert with default settings except message and confirm action handler.
+	///
+	/// - Parameter message: The message of alert view.
+	/// - Parameter confirm: The confirm action handler of alert view.
     func show(message: String, confirm: AlertActionHandler?) {
         let alert = BSAlert(message: message, confirm: confirm)
         BSAlertController.shared.addNewAlert(alert)
     }
-    
+	
+	/// Display an OPTIONAL type alert with default settings except message and action handlers.
+	///
+	/// - Parameter message: The message of alert view.
+	/// - Parameter confirm: The confirm action handler of alert view.
+	/// - Parameter cancel: The cancel action handler of alert view.
     func showOptional(message: String, confirm: AlertActionHandler?, cancel: AlertActionHandler?) {
         let alert = BSAlert(type: .optional, message: message, confirm: confirm, cancel: cancel)
         BSAlertController.shared.addNewAlert(alert)
     }
-    
+	
+	/// Display an CONFIRM type alert with default settings except message.
+	///
+	/// - Parameter message: The message of alert view.
     func show(message: String) {
         let alert = BSAlert(message: message, confirm: nil)
         BSAlertController.shared.addNewAlert(alert)
     }
-    
+	
+	/// Display an CONFIRM type alert with error style title and customized message.
+	///
+	/// - Parameter message: The message of alert view.
     func showError(message: String) {
         let alert = BSAlert(title: .error, message: message, confirm: nil)
         BSAlertController.shared.addNewAlert(alert)
@@ -187,7 +206,8 @@ public extension BSAlertController {
 }
 
 
-extension UIApplication {
+// MARK: - UIApplication+Extension
+private extension UIApplication {
     class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewController(controller: navigationController.visibleViewController)
