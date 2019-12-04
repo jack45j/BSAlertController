@@ -75,9 +75,7 @@
 				7CA3F5C92394A0BE00DE0D7E /* Assets.xcassets */,
 				7CA3F5CB2394A0BE00DE0D7E /* LaunchScreen.storyboard */,
 				7CA3F5CE2394A0BE00DE0D7E /* Info.plist */,
-				7CA3F5D42394A5F300DE0D7E /* BSAlertController.swift */,
-				7CA3F5D62394AD4900DE0D7E /* BSAlert.swift */,
-				7CA3F5DE2394F1B500DE0D7E /* View */,
+				7CD6E90A2397456600EE5924 /* BSAlertController */,
 			);
 			path = BSAlertController;
 			sourceTree = "<group>";
@@ -91,6 +89,16 @@
 				7CA3F5DF2394F1E000DE0D7E /* OptionalAlertView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7CD6E90A2397456600EE5924 /* BSAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				7CA3F5D42394A5F300DE0D7E /* BSAlertController.swift */,
+				7CA3F5D62394AD4900DE0D7E /* BSAlert.swift */,
+				7CA3F5DE2394F1B500DE0D7E /* View */,
+			);
+			path = BSAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YCStudio.BSAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -342,7 +350,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YCStudio.BSAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

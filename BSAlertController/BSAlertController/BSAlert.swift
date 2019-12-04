@@ -8,15 +8,20 @@
 
 import Foundation
 
-
+/// Alert object for BSAlertController.
 public struct BSAlert {
     
+    /// Determine the style of alert.
+    ///
+    /// Default to confirm
     public enum BSAlertType {
         case confirm
         case optional
     }
     
     /// Determine the title of the alert view
+    ///
+    /// Default to warning
     public enum BSAlertTitleType: String {
         case info = "資訊"
         case warning = "注意"
@@ -28,20 +33,27 @@ public struct BSAlert {
     /// Default to warning alert type
     let alertType: BSAlertType?
     
+    /// Title of alert
+    ///
+    /// Default to warning alert title type.
     let title: String
     
-    /// Alert messages
+    /// Message of alert.
     let message: String
     
+    /// Text of confirm button.
     let confirmButtonText: String?
     
+    /// Text of cancel button.
     let cancelButtonText: String?
     
+    /// A Boolean value indicating whether alert view should perform animate or not.
     let shouldAnimateIn: Bool
     let shouldAnimateOut: Bool
     
-    let confirm: ConfirmAlertHandler?
-    let cancel: ConfirmAlertHandler?
+    /// Action handler of confirm and cancel button.
+    let confirm: AlertActionHandler?
+    let cancel: AlertActionHandler?
     
     init(type: BSAlertType = .confirm,
          title: BSAlertTitleType = .warning,
@@ -50,8 +62,8 @@ public struct BSAlert {
          cancelButtonText: String = "取消",
          shouldAnimateIn: Bool = true,
          shouldAnimateOut: Bool = true,
-         confirm: ConfirmAlertHandler?,
-         cancel: ConfirmAlertHandler? = nil) {
+         confirm: AlertActionHandler?,
+         cancel: AlertActionHandler? = nil) {
         
         self.alertType = type
         self.title = title.rawValue

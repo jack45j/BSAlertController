@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonDidTap(_ sender: Any) {
 		for ind in 0...100 {
-			show(alert: BSAlert(type: .confirm,
+            BSAlertController.shared.show(BSAlert(type: .confirm,
 								title: .error,
 								message: "\(ind)",
 								confirmButtonText: "Confirm\(ind)",
